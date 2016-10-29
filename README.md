@@ -1,4 +1,4 @@
-# calculator
+# Calculator
 Simple calculator made in Javascript.
 Unit tested with Mocha
 
