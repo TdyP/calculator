@@ -1,0 +1,87 @@
+body {
+  background: #FFFFD5;
+  color: #FFFFFF;
+}
+#calculator {
+  width: 500px;
+  margin: auto;
+  font-size: 2rem;
+  border: 2px solid #373D20;
+  border-radius: 2px;
+}
+#calculator .res,
+#calculator .input {
+  font-size: 2rem;
+  line-height: 3rem;
+  height: 3rem;
+}
+#calculator .res {
+  background: #FF8F44;
+  padding: 1rem;
+  font-size: 3rem;
+}
+#calculator .res::before {
+  content: '= ';
+  opacity: 0.6;
+}
+#calculator .input {
+  background: #FFFFFF;
+  color: #373D20;
+  padding: 0.5rem;
+  text-align: right;
+}
+#calculator .input::after {
+  content: ' <';
+  opacity: 0.6;
+}
+#calculator .input input {
+  width: 100%;
+  height: 2rem;
+  font-size: 2rem;
+  margin: 0;
+  border: none;
+}
+#calculator .pad {
+  background: #FCAF6F;
+  color: #373D20;
+  display: flex;
+  flex-direction: row;
+}
+#calculator .pad .numbers {
+  flex: 1 1 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#calculator .pad .numbers > div,
+#calculator .pad .operands > div {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#calculator .pad .numbers > div:hover {
+  background: #E6A065;
+}
+#calculator .pad .operands > div:hover {
+  background: #D59660;
+}
+#calculator .pad .numbers > div {
+  flex: 1 1 33%;
+}
+#calculator .pad .operands {
+  background: #EAA469;
+  flex: 0 0 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#calculator .pad .operands > div {
+  align-self: center;
+  height: 5rem;
+  width: 50%;
+  flex: 1 1 auto;
+}
